@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [com.vsm.casestudy.mainTest]">
+  <test name="Command line test(failed)">
+    <classes>
+      <class name="com.vsm.casestudy.mainTest">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+          <include name="verifySuccessful_WelcomePage"/>
+          <include name="verifySuccessful_Login_ToApplication"/>
+          <include name="verifySuccessful_DarshboardPage"/>
+          <include name="verifySuccessful_ExecutivePage"/>
+        </methods>
+      </class> <!-- com.vsm.casestudy.mainTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [com.vsm.casestudy.mainTest] -->
