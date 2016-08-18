@@ -7,7 +7,8 @@ import org.testng.annotations.*;
 public class mainTest {
 	private String username = "root";
 	private String password = "root";
-	private String baseURL = "http://10.44.90.13:8080/CaseStudyVulnerability/LoginPage1.jsp";
+	//private String baseURL = "http://10.44.90.13:8080/CaseStudyVulnerability/LoginPage1.jsp";
+	private String baseURL = "http://10.51.237.129:7777/CaseStudyVulnerability/";
 	WebDriver driver;
 
 	@BeforeClass
@@ -21,7 +22,7 @@ public class mainTest {
 		  driver.quit(); 
 	} 
 
-	@Test (priority = 1, enabled = true)
+	@Test (priority = 1, enabled = false)
 	public void verifySuccessful_Login_ToApplication () {
 		loginpage login = new loginpage();
 		login.applicationlogin(username, password);
