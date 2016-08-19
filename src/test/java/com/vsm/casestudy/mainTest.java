@@ -22,11 +22,11 @@ public class mainTest {
 		  driver.quit(); 
 	} 
 
-	@Test (priority = 1, enabled = false)
-	public void verifySuccessful_Login_ToApplication () {
-		loginpage login = new loginpage();
-		login.applicationlogin(username, password);
-	}
+//	@Test (priority = 1, enabled = false)
+//	public void verifySuccessful_Login_ToApplication () {
+//		loginpage login = new loginpage();
+//		login.applicationlogin(username, password);
+//	}
 
 	@Test (priority = 2, enabled = true)
 	public void verifySuccessful_WelcomePage () {
