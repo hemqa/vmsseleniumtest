@@ -1,0 +1,17 @@
+---
+- name: container
+  hosts: client
+  tasks:
+  - name: Executing Selenium Tests on created container
+    docker:
+     name: seltestserver
+     image: hemqa/testserverbase:v2
+     detach: yes
+     hostname: seltest
+     state: started
+     stdin_open: yes
+     volumes:
+       - /root/caseStudy/ansible/TestVMSApp:/root
+       - /root/.m2:/root/.m2
+  - name: script
+    script: dockercall.sh seltestserver
