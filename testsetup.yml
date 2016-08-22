@@ -2,6 +2,8 @@
 - name: container
   hosts: client
   tasks:
+  - name: Updating user changes.
+    command: chmod +x *.sh
   - name: Creating Test Environment.
     docker:
      name: seltestserver
