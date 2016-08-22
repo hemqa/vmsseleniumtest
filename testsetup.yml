@@ -2,6 +2,7 @@
 - name: container
   hosts: client
   tasks:
+
   - name: Creating Test Environment.
     docker:
      name: seltestserver
@@ -11,8 +12,9 @@
      state: started
      stdin_open: yes
      volumes:
-       - /root/caseStudy/ansible/TestVMSApp:/root
+       - /var/lib/jenkins/workspace/seltest:/root
        - /root/.m2:/root/.m2
+
   - name: Executing Selenium test cases on container.
     script: dockercall.sh seltestserver
 
