@@ -17,6 +17,3 @@
 
   - name: Executing Selenium test cases on container.
     script: dockercall.sh seltestserver
-
-  - name: Updating user changes.
-    command: chown -R jenkins:jenkins *
