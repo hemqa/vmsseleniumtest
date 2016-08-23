@@ -1,4 +1,4 @@
-#! binbash
+#! /bin/bash
 
 set -eux 
 docker stop $1
