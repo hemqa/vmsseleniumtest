@@ -18,6 +18,6 @@
   - name: Executing Selenium test cases on container.
     script: dockercall.sh seltestserver '{{ job_name }}'
 
-  - name: Distroying test containers.
-    script: dockercleanup.sh seltestserver
+# - name: Distroying test containers.
+#   script: dockercleanup.sh seltestserver
 ...
