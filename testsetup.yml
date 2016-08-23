@@ -20,4 +20,4 @@
 
   - name: Distroying test containers.
     script: dockercleanup.sh seltestserver
-	
+...
